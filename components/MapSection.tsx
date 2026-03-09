@@ -70,23 +70,30 @@ export default function MapSection() {
                     </div>
 
                     {/* Ping Locations */}
-                    {locations.map((loc, i) => (
-                        <div key={loc.name} className="absolute" style={{ top: loc.top, left: loc.left }}>
-                            <div className="relative group">
-                                <motion.div
-                                    animate={{ scale: [1, 2.5], opacity: [0.8, 0] }}
-                                    transition={{ repeat: Infinity, duration: 2, delay: i * 0.5 }}
-                                    className="absolute w-3 h-3 bg-[#4D774E] rounded-full -top-1 -left-1"
-                                />
-                                <div className="w-1 h-1 bg-[#4D774E] rounded-full relative z-10" />
+                    {locations.map((loc, i) => {
+                        const isClassified = loc.type === "CLASSIFIED";
+                        const pingColor = isClassified ? "bg-red-600" : "bg-[#4D774E]";
+                        const shadowColor = isClassified ? "shadow-[0_0_15px_red]" : "shadow-[0_0_8px_#4D774E]";
 
-                                <div className="absolute left-4 top-0 opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap bg-black/80 border border-white/20 p-2 text-[10px] z-20 pointer-events-none">
-                                    <p className="text-white font-bold">{loc.name}</p>
-                                    <p className="text-white/50 mt-1">{loc.coords}</p>
+                        return (
+                            <div key={loc.name} className="absolute" style={{ top: loc.top, left: loc.left }}>
+                                <div className="relative group cursor-crosshair">
+                                    <motion.div
+                                        animate={{ scale: [1, 2.5], opacity: [0.8, 0] }}
+                                        transition={{ repeat: Infinity, duration: isClassified ? 1.5 : 2, delay: i * 0.5 }}
+                                        className={`absolute w-3 h-3 ${pingColor} rounded-full -top-1 -left-1`}
+                                    />
+                                    <div className={`w-1 h-1 ${pingColor} ${shadowColor} rounded-full relative z-10`} />
+
+                                    <div className="absolute left-4 top-0 opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap bg-black/80 border border-white/20 p-2 text-[10px] z-20 pointer-events-none">
+                                        <p className={`${isClassified ? 'text-red-500' : 'text-white'} font-bold`}>{loc.name}</p>
+                                        <p className="text-white/50 mt-1 pb-1 border-b border-white/10">{loc.coords}</p>
+                                        <p className="text-white/30 text-[8px] mt-1 pt-1 tracking-widest uppercase">CONNECTION SECURE</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    ))}
+                        );
+                    })}
                 </div>
             </div>
         </section>
