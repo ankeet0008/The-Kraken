@@ -16,7 +16,12 @@ export default function Footer() {
                     <a href="#" className="hover:text-white transition">TRAINING SYLLABUS</a>
                 </div>
 
-                <div className="text-[10px] font-space text-white/30">
+                <div className="flex gap-6 text-[10px] font-space text-white/40 tracking-widest">
+                    <a href="#" className="hover:text-[#4D774E] transition uppercase">Instagram</a>
+                    <a href="#" className="hover:text-[#4D774E] transition uppercase">YouTube</a>
+                </div>
+
+                <div className="text-[10px] font-space text-white/30 hidden md:block">
                     © 2026 KRAKEN. CLASSIFIED.
                 </div>
             </div>
