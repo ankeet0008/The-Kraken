@@ -3,7 +3,7 @@ import { useRef, useEffect } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { droneData } from '@/data/droneData';
 
-export default function HeroSectionVideo() {
+export default function HeroSectionVideo({ onEnlist }: { onEnlist?: () => void }) {
     const videoRef = useRef<HTMLVideoElement>(null);
     const isInView = useInView(videoRef);
 
@@ -63,7 +63,7 @@ export default function HeroSectionVideo() {
                             <p className="text-[10px] text-white/50 uppercase font-rajdhani">COMMAND</p>
                         </div>
                         <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center border border-white/20">
-                            <span role="img" aria-label="pilot">👨✈️</span>
+                            <span role="img" aria-label="pilot">👨‍✈️</span>
                         </div>
                     </motion.div>
                 </div>
@@ -130,7 +130,10 @@ export default function HeroSectionVideo() {
                         <div className="mt-8 pl-6 border-l-2 border-white/40 pointer-events-auto">
                             <p className="text-xl font-rajdhani text-gray-200">{droneData.hero.subtitle}</p>
                             <div className="flex gap-4 mt-6">
-                                <button className="px-8 py-3 bg-white text-black font-bold font-space text-sm tracking-widest rounded transition-transform hover:scale-105 hover:bg-exec-blue hover:text-white">
+                                <button
+                                    onClick={onEnlist}
+                                    className="px-8 py-3 bg-white text-black font-bold font-space text-sm tracking-widest rounded transition-transform hover:scale-105 hover:bg-exec-blue hover:text-white"
+                                >
                                     ENLIST NOW
                                 </button>
                                 <button className="px-8 py-3 border border-white/30 text-white font-bold font-space text-sm tracking-widest rounded backdrop-blur-md hover:bg-white/10 hover:border-white">
