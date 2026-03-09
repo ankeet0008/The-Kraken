@@ -6,7 +6,10 @@ const navLinks = [
     { label: 'HOME', index: 0 },
     { label: 'ABOUT', index: 1 },
     { label: 'PROGRAMS', index: 2 },
-    { label: 'CONTACT', index: 5 },
+    { label: 'CADRE', index: 5 },
+    { label: 'SHOP', index: 8 },
+    { label: 'FAQ', index: 9 },
+    { label: 'CONTACT', index: 10 },
 ];
 
 export default function Navbar() {
