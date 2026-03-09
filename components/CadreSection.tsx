@@ -127,6 +127,13 @@ export default function CadreSection() {
                                         </motion.div>
                                     )}
                                 </AnimatePresence>
+
+                                {/* Action on hover */}
+                                <div className="absolute bottom-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
+                                    <p className="font-space text-[10px] text-[#4D774E] tracking-widest uppercase hover:text-white cursor-pointer transition-colors">
+                                        DECRYPT DOSSIER {'>'}
+                                    </p>
+                                </div>
                             </div>
                         </motion.div>
                     ))}
