@@ -2,9 +2,9 @@
 import { motion } from 'framer-motion';
 
 const gearItems = [
-    { name: "RECON PLATE CARRIER", price: "$285", img: "https://images.unsplash.com/photo-1595166416198-d7b1a64f3c02?q=80&w=400&auto=format&fit=crop" },
-    { name: "TACTICAL ASSAULT PACK", price: "$145", img: "https://images.unsplash.com/photo-1553531384-cc64ac80f931?q=80&w=400&auto=format&fit=crop" },
-    { name: "KRAKEN PVC PATCH", price: "$15", img: "https://images.unsplash.com/photo-1627885461756-32eb4a7aeaf7?q=80&w=400&auto=format&fit=crop" }, // Placeholder for patch
+    { name: "RECON PLATE CARRIER", price: "$285", inStock: true, img: "https://images.unsplash.com/photo-1595166416198-d7b1a64f3c02?q=80&w=400&auto=format&fit=crop" },
+    { name: "TACTICAL ASSAULT PACK", price: "$145", inStock: false, img: "https://images.unsplash.com/photo-1553531384-cc64ac80f931?q=80&w=400&auto=format&fit=crop" },
+    { name: "KRAKEN PVC PATCH", price: "$15", inStock: true, img: "https://images.unsplash.com/photo-1627885461756-32eb4a7aeaf7?q=80&w=400&auto=format&fit=crop" }, // Placeholder for patch
 ];
 
 export default function ShopSection() {
@@ -36,10 +36,10 @@ export default function ShopSection() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: i * 0.15 + 0.2 }}
-                            className="group flex flex-col items-center bg-black border border-white/10 hover:border-white/30 transition-colors duration-300 p-8 cursor-pointer relative"
+                            className={`group flex flex-col items-center bg-black border ${item.inStock ? 'border-white/10 hover:border-white/30 cursor-pointer' : 'border-white/5 cursor-not-allowed opacity-50'} transition-colors duration-300 p-8 relative`}
                         >
                             {/* Target Reticle Hover */}
-                            <div className="absolute inset-4 border border-white/5 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
+                            {item.inStock && <div className="absolute inset-4 border border-white/5 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />}
 
                             <div className="w-full aspect-square bg-[#0a0a0a] mb-8 relative flex items-center justify-center overflow-hidden border border-white/5 p-4">
                                 <img
@@ -54,8 +54,8 @@ export default function ShopSection() {
                                 <h3 className="text-white text-lg font-bold tracking-wider">{item.name}</h3>
                                 <div className="flex justify-between items-center pt-4 border-t border-white/10">
                                     <p className="text-white/60 text-sm tracking-widest">{item.price}</p>
-                                    <p className="text-xs text-exec-blue uppercase group-hover:tracking-wider transition-all">
-                                        ACQUIRE [→]
+                                    <p className={`text-xs ${item.inStock ? 'text-exec-blue group-hover:tracking-wider transition-all' : 'text-red-500'} uppercase`}>
+                                        {item.inStock ? 'ACQUIRE [→]' : '[ UNAVAILABLE ]'}
                                     </p>
                                 </div>
                             </div>
