@@ -61,7 +61,7 @@ export default function TestimonialSection() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.15 }}
-                            className="bg-black border border-white/10 p-8 relative group hover:border-white/30 transition-colors duration-300"
+                            className="bg-black border border-white/10 p-8 relative group hover:border-exec-blue/50 transition-colors duration-300"
                         >
                             {/* Watermark */}
                             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-9xl font-rajdhani font-black text-white/5 -rotate-45 pointer-events-none select-none">
