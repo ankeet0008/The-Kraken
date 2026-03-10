@@ -55,7 +55,7 @@ export default function ShopSection() {
                                 <div className="flex justify-between items-center pt-4 border-t border-white/10">
                                     <p className="text-white/60 text-sm tracking-widest">{item.price}</p>
                                     <p className={`text-xs ${item.inStock ? 'text-exec-blue group-hover:tracking-wider transition-all' : 'text-red-500'} uppercase`}>
-                                        {item.inStock ? 'ACQUIRE [→]' : '[ UNAVAILABLE ]'}
+                                        {item.inStock ? 'ACQUIRE [→]' : '[ OUT OF STOCK ]'}
                                     </p>
                                 </div>
                             </div>
