@@ -77,7 +77,7 @@ export default function HeroSectionVideo({ onEnlist }: { onEnlist?: () => void }
                         className="bg-black/60 backdrop-blur-md px-4 py-2 rounded-full border border-white/20 flex items-center gap-2"
                     >
                         <span className="w-1.5 h-1.5 bg-exec-blue rounded-full animate-pulse" />
-                        <span className="text-[10px] font-bold font-space text-white">HEART RATE: 145 BPM</span>
+                        <span className="text-[10px] font-bold font-space text-white">HEART RATE: 148 BPM</span>
                     </motion.div>
                     <motion.div
                         initial={{ height: 0 }}
