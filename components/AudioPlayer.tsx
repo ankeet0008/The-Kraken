@@ -23,6 +23,7 @@ export default function AudioPlayer() {
             <audio
                 ref={audioRef}
                 src="https://www.soundjay.com/misc/sounds/wind-howl-01.mp3"
+                crossOrigin="anonymous"
                 loop
                 className="hidden"
             />
