@@ -69,7 +69,7 @@ export default function Navbar() {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ delay: 0.6 + i * 0.1 }}
                         onClick={() => scrollToSection(item.index)}
-                        className={`font-space font-bold text-xs tracking-[0.2em] transition-all duration-300 py-1 ${activeSection === item.index
+                        className={`font-space font-bold text-xs tracking-[0.2em] transition-all duration-300 py-1.5 ${activeSection === item.index
                             ? 'text-white'
                             : 'text-white/40 hover:text-white/70'
                             }`}
