@@ -63,8 +63,8 @@ export default function FaqSection() {
                                         {faq.q}
                                     </h3>
                                 </div>
-                                <span className="text-white/50 text-2xl font-light transform transition-transform duration-300">
-                                    {openIndex === index ? "−" : "+"}
+                                <span className="text-white/50 text-xs font-bold font-space transform transition-transform duration-300">
+                                    {openIndex === index ? "[-]" : "[+]"}
                                 </span>
                             </button>
 
