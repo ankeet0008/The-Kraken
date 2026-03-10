@@ -77,7 +77,7 @@ export default function EnlistModal({ isOpen, onClose }: { isOpen: boolean; onCl
 
                                 <button
                                     type="button"
-                                    className="w-full bg-[#4D774E] text-black font-rajdhani font-bold text-xl py-4 mt-8 hover:bg-white hover:text-black transition-colors"
+                                    className="w-full bg-[#4D774E] text-black font-rajdhani font-bold text-xl py-4 mt-8 hover:bg-white hover:text-black transition-colors tracking-widest"
                                     onClick={onClose}
                                 >
                                     SUBMIT DOSSIER
