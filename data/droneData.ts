@@ -34,13 +34,13 @@ export const droneData = {
             id: "tier1",
             name: "Tier 1 Operator",
             price: "ELITE",
-            features: ["Advanced Marksmanship", "Hostage Rescue", "Night Operations"]
+            features: ["Advanced Weapons Handling", "Hostage Rescue", "Night Operations"]
         },
         {
             id: "command",
             name: "Black Site Command",
             price: "CLASSIFIED",
-            features: ["Leadership Doctrine", "Interrogation Evasion", "Strategic Planning"]
+            features: ["Tactical Leadership", "Interrogation Evasion", "Strategic Planning"]
         }
     ]
 };
