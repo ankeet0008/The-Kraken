@@ -47,7 +47,7 @@ export default function CadreSection() {
                     className="mb-20"
                 >
                     <p className="font-space text-exec-blue tracking-[0.3em] text-xs font-bold mb-4 uppercase">
-                        // Security Clearance Level 4 Required
+                        // SECURITY CLEARANCE: LEVEL 5 REQUIRED
                     </p>
                     <h2 className="text-5xl md:text-7xl font-rajdhani font-bold text-white tracking-tighter">
                         THE CADRE
