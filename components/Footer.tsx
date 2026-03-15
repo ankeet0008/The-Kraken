@@ -13,7 +13,7 @@ export default function Footer() {
                 <div className="flex gap-8 text-[10px] font-space text-white/40 tracking-widest">
                     <a href="#" className="hover:text-white transition">PRIVACY</a>
                     <a href="#" className="hover:text-white transition">TERMS</a>
-                    <a href="#" className="hover:text-white transition">TRAINING SYLLABUS</a>
+                    <a href="#" className="hover:text-white transition">ACADEMY TRAILER</a>
                 </div>
 
                 <div className="flex gap-6 text-[10px] font-space text-white/40 tracking-widest">
