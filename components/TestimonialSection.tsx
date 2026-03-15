@@ -48,7 +48,7 @@ export default function TestimonialSection() {
                         </h2>
                     </div>
                     <div className="text-right font-space text-xs text-white/30 tracking-widest hidden md:block">
-                        <p>SYSTEM UPTIME: 99.9%</p>
+                        <p>NETWORK UPTIME: 99.9%</p>
                         <p>DATA INTEGRITY: VERIFIED</p>
                     </div>
                 </motion.div>
