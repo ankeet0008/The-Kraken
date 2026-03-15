@@ -6,7 +6,7 @@ A high-performance, cinematic website built for **Kraken Special Operations Trai
 
 ---
 
-## ✨ Featuresss
+## ✨ Features
 
 - **Cinematic Hero Section** — Full-screen video background with animated overlays and zoom-in reveal effect
 - **Stacking Scroll Animations** — Sections slide up and stack over one another using GSAP `ScrollTrigger` for a smooth, layered parallax experience
