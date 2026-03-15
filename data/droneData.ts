@@ -1,7 +1,7 @@
 export const droneData = {
     hero: {
         title: "THE KRAKEN",
-        subtitle: "Tier 1 Special Operations Training. Push beyond human limits.",
+        subtitle: "Tier 1 Special Operations Training. Push past human limits.",
         videoPath: "/videos/hero/hero-video.mp4",
     },
     gallery: [
