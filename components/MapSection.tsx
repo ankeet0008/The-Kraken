@@ -17,7 +17,7 @@ export default function MapSection() {
                 <div className="md:w-1/3 space-y-8">
                     <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
                         <p className="text-exec-blue tracking-[0.3em] text-xs font-bold mb-4 uppercase">
-                            // STAGING GROUNDS
+                            // TACTICAL STAGING GROUNDS
                         </p>
                         <h2 className="text-4xl md:text-5xl font-rajdhani font-bold text-white tracking-tighter mb-4">
                             DEPLOYMENT ZONES
