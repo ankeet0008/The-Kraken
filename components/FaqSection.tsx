@@ -49,7 +49,7 @@ export default function FaqSection() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1 }}
-                            className="border-b border-white/10 last:border-b-0"
+                            className={`border-b transition-colors duration-300 ${openIndex === index ? 'border-exec-blue bg-white/[0.02]' : 'border-white/10 last:border-b-0'}`}
                         >
                             <button
                                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
