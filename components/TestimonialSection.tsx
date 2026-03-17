@@ -64,9 +64,11 @@ export default function TestimonialSection() {
                             className="bg-black border border-white/10 p-8 relative group hover:border-exec-blue/50 transition-colors duration-300"
                         >
                             {/* Watermark */}
-                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-9xl font-rajdhani font-black text-white/5 -rotate-45 pointer-events-none select-none">
+                            <motion.div 
+                                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-9xl font-rajdhani font-black text-white/5 -rotate-45 pointer-events-none select-none transition-transform duration-700 group-hover:scale-110"
+                            >
                                 CLASSIFIED
-                            </div>
+                            </motion.div>
 
                             <div className="relative z-10">
                                 <div className="flex justify-between items-start mb-8 border-b border-white/10 pb-4">
