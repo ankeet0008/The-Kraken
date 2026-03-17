@@ -34,8 +34,15 @@ export default function EnlistModal({ isOpen, onClose }: { isOpen: boolean; onCl
                             </button>
                         </div>
 
+                        {/* Scanner Line */}
+                        <motion.div 
+                            animate={{ top: ['0%', '100%'], opacity: [0, 0.5, 0] }} 
+                            transition={{ repeat: Infinity, duration: 3, ease: 'linear' }} 
+                            className="absolute left-0 right-0 h-1 bg-green-500/30 z-50 pointer-events-none" 
+                        />
+
                         {/* Modal Body */}
-                        <div className="p-8 space-y-8 h-[60vh] overflow-y-auto custom-scrollbar">
+                        <div className="p-8 space-y-8 h-[60vh] overflow-y-auto custom-scrollbar relative">
                             <div className="space-y-2">
                                 <p className="text-red-500 text-xs font-bold tracking-[0.2em]">WARNING: CLASSIFIED MATERIAL</p>
                                 <p className="text-white/70 text-sm leading-relaxed">
