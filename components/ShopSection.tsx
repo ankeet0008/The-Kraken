@@ -42,7 +42,9 @@ export default function ShopSection() {
                             {item.inStock && <div className="absolute inset-4 border border-white/5 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />}
 
                             <div className="w-full aspect-square bg-[#0a0a0a] mb-8 relative flex items-center justify-center overflow-hidden border border-white/5 p-4">
-                                <img
+                                <motion.img
+                                    whileHover={{ x: [-2, 2, -2, 0], y: [1, -1, 1, 0] }}
+                                    transition={{ duration: 0.2 }}
                                     src={item.img}
                                     alt={item.name}
                                     className="object-contain w-full h-full grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-105 mix-blend-lighten"
