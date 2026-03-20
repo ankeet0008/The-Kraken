@@ -30,7 +30,7 @@ export default function AudioPlayer() {
 
             <button
                 onClick={toggleAudio}
-                className="w-10 h-10 bg-black/50 backdrop-blur-md border border-white/20 rounded-full flex items-center justify-center hover:bg-white/10 transition-colors group relative"
+                className={`w-10 h-10 bg-black/50 backdrop-blur-md border border-white/20 rounded-full flex items-center justify-center hover:bg-white/10 transition-all group relative ${isPlaying ? 'shadow-[0_0_15px_rgba(77,119,78,0.5)] border-[#4D774E]/50' : ''}`}
             >
                 {/* Visualizer bars */}
                 <div className="flex gap-0.5 items-end h-3">
