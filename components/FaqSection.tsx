@@ -18,6 +18,10 @@ const faqs = [
     {
         q: "WHAT IF I INJURE MYSELF OR FAIL?",
         a: "Training is dangerous by design. Medical staff are on standby 24/7. If you DOR (Drop On Request) or are removed for medical reasons, you will be extracted immediately. There are no refunds for failure."
+    },
+    {
+        q: "HOW DO I ACCESS MY REDACTED TRAINING RECORDS?",
+        a: "Training records are classified under section ██-█. Access is only granted to personnel who have successfully completed the Tier 1 Elite program and obtained ████ clearance."
     }
 ];
 
