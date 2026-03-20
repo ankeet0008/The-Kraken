@@ -9,6 +9,7 @@ const cadreData = [
         specialty: "CQC / TACTICAL COMMAND",
         deployments: "███████, █████, KABUL",
         status: "ACTIVE",
+        lastSeen: "2026.03.11",
         image: "https://images.unsplash.com/photo-1574169208507-84376144848b?q=80&w=800&auto=format&fit=crop"
     },
     {
@@ -17,6 +18,7 @@ const cadreData = [
         specialty: "SNIPER / STEALTH INFILTRATION",
         deployments: "█████, FALLUJAH, ████████",
         status: "ACTIVE",
+        lastSeen: "2026.03.18",
         image: "https://images.unsplash.com/photo-1620000617482-821dd66c4069?q=80&w=800&auto=format&fit=crop" // Placeholder
     },
     {
@@ -25,6 +27,7 @@ const cadreData = [
         specialty: "BREACHING / EXPLOSIVES",
         deployments: "██████, ███████, ████",
         status: "ACTIVE",
+        lastSeen: "2026.03.20",
         image: "https://images.unsplash.com/photo-1599305090598-fe179d501227?q=80&w=800&auto=format&fit=crop" // Placeholder
     }
 ];
