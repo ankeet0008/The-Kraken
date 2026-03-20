@@ -2,6 +2,9 @@
 
 > **Tier 1 Special Operations Training. Push beyond human limits.**
 
+[![Deployment Status](https://img.shields.io/badge/Deployment-Live-success?style=flat-square&logo=vercel)](https://the-kraken.vercel.app/)
+[![Last Update](https://img.shields.io/badge/Last%20Update-March%202026-blue?style=flat-square)](https://github.com/ankeet0008/the-kraken/commits/main)
+
 A high-performance, cinematic website built for **Kraken Special Operations Training** — featuring immersive scroll animations, full-screen video sections, and a tactical military aesthetic.
 
 ---
