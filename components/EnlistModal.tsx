@@ -36,9 +36,9 @@ export default function EnlistModal({ isOpen, onClose }: { isOpen: boolean; onCl
 
                         {/* Scanner Line */}
                         <motion.div 
-                            animate={{ top: ['0%', '100%'], opacity: [0, 0.5, 0] }} 
-                            transition={{ repeat: Infinity, duration: 3, ease: 'linear' }} 
-                            className="absolute left-0 right-0 h-1 bg-green-500/30 z-50 pointer-events-none" 
+                            animate={{ top: ['0%', '100%'], opacity: [0, 0.4, 0] }} 
+                            transition={{ repeat: Infinity, duration: 2.5, ease: 'linear' }} 
+                            className="absolute left-0 right-0 h-1 bg-[#4D774E]/40 z-50 pointer-events-none shadow-[0_0_10px_#4D774E]" 
                         />
 
                         {/* Modal Body */}
